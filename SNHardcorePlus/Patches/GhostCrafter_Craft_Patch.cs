@@ -17,7 +17,9 @@ namespace SNHardcorePlus.Patches
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(5) && !injected)
                 {
                     injected = true;
+
                     yield return new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.PowerUsedPerCraft);
+                    continue;
                 }
 
                 yield return instruction;
