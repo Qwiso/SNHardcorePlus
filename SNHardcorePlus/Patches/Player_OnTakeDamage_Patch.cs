@@ -18,7 +18,7 @@ namespace SNHardcorePlus.Patches
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(100f) && !injected)
                 {
                     injected = true;
-                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.HealthMax);
+                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.HealthMax);
                     newInstruction.labels = instruction.labels;
                     yield return newInstruction;
                 }

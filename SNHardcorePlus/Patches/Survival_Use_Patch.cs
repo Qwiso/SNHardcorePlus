@@ -17,7 +17,7 @@ namespace SNHardcorePlus.Patches
                 if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(50f) && !injected)
                 {
                     injected = true;
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.HealthKitRestoreAmount);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.HealthKitRestoreAmount);
                     continue;
                 }
 

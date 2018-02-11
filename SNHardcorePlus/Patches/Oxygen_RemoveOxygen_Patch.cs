@@ -11,7 +11,7 @@ namespace SNHardcorePlus.Patches
         {
             var cleanAmount = Mathf.Min(amount, __instance.oxygenAvailable);
 
-            float num = Mathf.Min(amount * HCPSettings.OxygenDrainMultiplier, __instance.oxygenAvailable);
+            float num = Mathf.Min(amount * HCPSettings.Instance.OxygenDrainMultiplier, __instance.oxygenAvailable);
 
             __instance.oxygenAvailable = Mathf.Max(0f, __instance.oxygenAvailable - num);
 

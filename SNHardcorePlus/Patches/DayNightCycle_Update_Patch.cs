@@ -11,7 +11,7 @@ namespace SNHardcorePlus.Patches
             if (__instance.debugFreeze) return false;
 
             var speed = __instance.GetType().GetField("_dayNightSpeed", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            speed.SetValue(__instance, HCPSettings.DayNightCycleMultiplier);
+            speed.SetValue(__instance, HCPSettings.Instance.DayNightCycleMultiplier);
 
             __instance.timePassedAsDouble += (double)__instance.deltaTime;
 

@@ -23,7 +23,7 @@ namespace SNHardcorePlus.Patches
                 {
                     injected = true;
 
-                    yield return new CodeInstruction(OpCodes.Ldc_I4, HCPSettings.CraftingCostMultiplier);
+                    yield return new CodeInstruction(OpCodes.Ldc_I4, HCPSettings.Instance.CraftingCostMultiplier);
                     yield return new CodeInstruction(OpCodes.Mul);
                 }
             }

@@ -8,7 +8,7 @@ namespace SNHardcorePlus.Patches
     {
         public static void Postfix(float __result)
         {
-            __result *= HCPSettings.RawDamageMultiplier;
+            __result *= HCPSettings.Instance.RawDamageMultiplier;
         }
     }
 }

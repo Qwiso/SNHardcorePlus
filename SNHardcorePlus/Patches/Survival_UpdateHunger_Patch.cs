@@ -20,7 +20,7 @@ namespace SNHardcorePlus.Patches
                 {
                     healthThresholdInjected = true;
 
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, (HCPSettings.FoodMax + HCPSettings.WaterMax) * HCPSettings.HealthRegenerationThreshold);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, (HCPSettings.Instance.FoodMax + HCPSettings.Instance.WaterMax) * HCPSettings.Instance.HealthRegenerationThreshold);
                     continue;
                 }
 
@@ -28,7 +28,7 @@ namespace SNHardcorePlus.Patches
                 {
                     healthRegenAmountInjected = true;
 
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, (HCPSettings.HealthRegenerationAmount / 10f));
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, (HCPSettings.Instance.HealthRegenerationAmount / 10f));
                     continue;
                 }
 

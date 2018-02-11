@@ -8,11 +8,11 @@ namespace SNHardcorePlus.Patches
     {
         public static bool Prefix(Survival __instance)
         {
-            __instance.GetComponent<Player>().liveMixin.data.maxHealth = HCPSettings.HealthMax;
-            __instance.GetComponent<Player>().liveMixin.health = HCPSettings.HealthMax * HCPSettings.HealthRespawnRatio;
+            __instance.GetComponent<Player>().liveMixin.data.maxHealth = HCPSettings.Instance.HealthMax;
+            __instance.GetComponent<Player>().liveMixin.health = HCPSettings.Instance.HealthMax * HCPSettings.Instance.HealthRespawnRatio;
 
-            __instance.food = HCPSettings.FoodStart;
-            __instance.water = HCPSettings.WaterStart;
+            __instance.food = HCPSettings.Instance.FoodStart;
+            __instance.water = HCPSettings.Instance.WaterStart;
 
             return false;
         }

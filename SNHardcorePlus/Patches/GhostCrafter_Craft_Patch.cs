@@ -18,7 +18,7 @@ namespace SNHardcorePlus.Patches
                 {
                     injected = true;
 
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.PowerUsedPerCraft);
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.PowerUsedPerCraft);
                     continue;
                 }
 

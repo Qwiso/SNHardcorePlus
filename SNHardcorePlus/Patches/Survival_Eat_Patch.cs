@@ -20,7 +20,7 @@ namespace SNHardcorePlus.Patches
                 {
                     hungryValueInjected = true;
 
-                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.FoodMax - 1f);
+                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.FoodMax - 1f);
                     newInstruction.labels = instruction.labels;
                     yield return newInstruction;
                     continue;
@@ -30,7 +30,7 @@ namespace SNHardcorePlus.Patches
                 {
                     foodInjected = true;
 
-                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.FoodMax);
+                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.FoodMax);
                     newInstruction.labels = instruction.labels;
                     yield return newInstruction;
                     continue;
@@ -40,7 +40,7 @@ namespace SNHardcorePlus.Patches
                 {
                     waterInjected = true;
 
-                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.WaterMax);
+                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.WaterMax);
                     newInstruction.labels = instruction.labels;
                     yield return newInstruction;
                     continue;
