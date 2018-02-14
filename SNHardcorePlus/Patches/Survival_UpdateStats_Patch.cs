@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Harmony;
+﻿using Harmony;
 using System.Reflection;
 using UnityEngine;
 
@@ -8,7 +6,7 @@ namespace SNHardcorePlus.Patches
 {
     [HarmonyPatch(typeof(Survival))]
     [HarmonyPatch("UpdateStats")]
-    public class Survival_UpdateStats_Patch
+    class Survival_UpdateStats_Patch
     {
         public static bool Prefix(Survival __instance, ref float __result, ref float timePassed)
         {

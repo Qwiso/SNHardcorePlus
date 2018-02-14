@@ -7,7 +7,7 @@ namespace SNHardcorePlus.Patches
 {
     [HarmonyPatch(typeof(Survival))]
     [HarmonyPatch("OnHealTempDamage")]
-    public class Survival_OnHealTempDamage_Patch
+    class Survival_OnHealTempDamage_Patch
     {
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
