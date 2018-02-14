@@ -20,7 +20,7 @@ namespace SNHardcorePlus
         private static void manageSettingsFile()
         {
             string modDirectory = Environment.CurrentDirectory + @"\QMods";
-            string settingsPath = modDirectory + @"\snhcp.txt";
+            string settingsPath = modDirectory + @"\SNHardcorePlus\config.json";
 
             if (!File.Exists(settingsPath))
             {
@@ -29,11 +29,11 @@ namespace SNHardcorePlus
             }
 
             var userSettings = JsonConvert.DeserializeObject<HCPSettings>(File.ReadAllText(settingsPath));
-            applyUserSettings(userSettings, modDirectory);
+            applyUserSettings(userSettings);
         }
 
 
-        private static void applyUserSettings(HCPSettings userSettings, string dir)
+        private static void applyUserSettings(HCPSettings userSettings)
         {
             var fields = typeof(HCPSettings).GetFields();
 
