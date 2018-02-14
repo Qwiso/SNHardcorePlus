@@ -10,6 +10,7 @@ Name | Value | Description
 :--- | :-----: | :---
 DayNightCycleMultiplier | 1.0 | the rate of time passing
 CraftingCostMultiplier | 1 | a value of 5 would make every blueprint require 5 times more of each ingredient
+PowerCostPerCraft | 5 | how much power does each item use when crafting
 HealthRegenerationThreshold | 0.75 | the percentage of FoodMax+WaterMax you must be above before you regen
 HealthRegenerationAmount | 0.5 | how much hp you regen every 10 seconds while above the regen threshold
 HealtKitRestoreAmount | 50.0 | 50hp returned per medical kit
@@ -32,6 +33,7 @@ DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code.
 {
 	"DayNightCycleMultiplier": 1.0,
 	"CraftingCostMultiplier": 1,
+        "PowerUsedPerCraft": 5.0,
 	"HealthRegenerationThreshold": 0.75,
 	"HealthRegenerationAmount": 0.5,
 	"HealthKitRestoreAmount": 50.0,
