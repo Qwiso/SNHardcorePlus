@@ -1,7 +1,7 @@
 ## Requires the use of [QModManager](https://github.com/Qwiso/QModManager)
 
 ### Installation
-After installing QMods via QModManager, extract the contents of the zip file to your `\QMods` folder
+After installing QMods via QModManager, extract the contents of [SNHardcorePlus.zip](https://github.com/Qwiso/SNHardcorePlus/releases/download/1.0.0/SNHardcorePlus.zip) file to your `\QMods` folder
 
 ### config.json
 Should be located in `QMods\SNHardcorePlus` folder. This is where you customize your experience by editing the values of each key
