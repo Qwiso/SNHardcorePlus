@@ -1,4 +1,4 @@
-## Requires the use of (QModManager)[https://github.com/Qwiso/QModManager]
+## Requires the use of [QModManager](https://github.com/Qwiso/QModManager)
 
 ### Installation
 Extract the contents of the zip file to your `\QMods` folder in your `Subnautica.exe` directory
