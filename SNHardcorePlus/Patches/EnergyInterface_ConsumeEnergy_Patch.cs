@@ -9,7 +9,7 @@ namespace SNHardcorePlus.Patches
     {
         public static void Postfix(EnergyInterface __instance, float __result, ref float amount)
         {
-            float num = -__instance.ModifyCharge(-Math.Abs(amount * HCPSettings.Instance.EnergyDrainMultiplier));
+            float num = -__instance.ModifyCharge(-Math.Abs(amount * HCPSettings.Instance.PrawnSeamothPowerDrainMultiplier));
             __result = num;
         }
     }

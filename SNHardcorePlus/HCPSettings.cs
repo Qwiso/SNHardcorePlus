@@ -27,8 +27,11 @@ namespace SNHardcorePlus
 
         public float FoodDrainMultiplier = 1f;                   // multiplier for food drain with 1f being 100%...
         public float WaterDrainMultiplier = 1f;
-        public float EnergyDrainMultiplier = 1f;
         public float OxygenDrainMultiplier = 1f;
+
+        public float PrawnSeamothPowerDrainMultiplier = 1f;
+        public float CyclopsPowerDrainMultiplier = 1f;
+        public float HandToolsPowerDrainMultiplier = 1f;
 
         public float StarvationDamageMultiplier = 25f;           // 25f is the value used by default in the game. scale up or down as you choose
         public float DehydrationDamageMultiplier = 25f;          // a value of 50f would kill you twice as quickly when starved or dehydrated
