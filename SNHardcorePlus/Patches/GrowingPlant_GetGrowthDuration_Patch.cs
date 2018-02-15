@@ -4,19 +4,20 @@ using System.Reflection.Emit;
 
 namespace SNHardcorePlus.Patches
 {
-    [HarmonyPatch(typeof(CrafterLogic))]
-    [HarmonyPatch("ConsumeEnergy")]
-    class CrafterLogic_ConsumeEnergy_Patch
+    [HarmonyPatch(typeof(GrowingPlant))]
+    [HarmonyPatch("GetGrowthDuration")]
+    class GrowingPlant_GetGrowthDuration_Patch
     {
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            bool injected = false;
+            bool multiplierInjected = false;
 
             foreach (var instruction in instructions)
             {
-                if (instruction.opcode.Equals(OpCodes.Ldarg_1) && !injected)
+                if (instruction.opcode.Equals(OpCodes.Ldloc_0) && !multiplierInjected)
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.PowerUsedPerCraft);
+                    multiplierInjected = true;
+                    yield return new CodeInstruction(OpCodes.Ldc_R4, (1f / HCPSettings.Instance.PlantGrowRateMultiplier));
                     continue;
                 }
 

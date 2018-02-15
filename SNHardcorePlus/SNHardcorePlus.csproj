@@ -54,12 +54,12 @@
   <ItemGroup>
     <Compile Include="HCPSettings.cs" />
     <Compile Include="Patches\CrafterLogic_ConsumeEnergy_Patch.cs" />
+    <Compile Include="Patches\GrowingPlant_GetGrowthDuration_Patch.cs" />
     <Compile Include="QPatcher.cs" />
     <Compile Include="Patches\CrafterLogic_IsCraftRecipeFulfilled_Patch.cs" />
     <Compile Include="Patches\DamageSystem_CalculateDamage_Patch.cs" />
     <Compile Include="Patches\DayNightCycle_Update_Patch.cs" />
     <Compile Include="Patches\EnergyInterface_ConsumeEnergy_Patch.cs" />
-    <Compile Include="Patches\GhostCrafter_Craft_Patch.cs" />
     <Compile Include="Patches\Inventory_ConsumeResourcesForRecipe_Patch.cs" />
     <Compile Include="Patches\Oxygen_RemoveOxygen_Patch.cs" />
     <Compile Include="Patches\Player_OnTakeDamage_Patch.cs" />
