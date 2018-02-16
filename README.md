@@ -39,7 +39,12 @@ DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code.
 {
 	"DayNightCycleMultiplier": 1.0,
 	"CraftingCostMultiplier": 1,
-        "PowerUsedPerCraft": 5.0,
+	"PowerUsedPerCraft": 5.0,
+	"CyclopsShieldPowerCost": 50.0,
+	"CyclopsSonarPowerCost": 10.0,
+	"CyclopsSilentPowerCost": 5.0,
+	"PlantGrowRateMultiplier": 1.0,
+	"MaproomPowerDrainMultiplier": 0.5,
 	"HealthRegenerationThreshold": 0.75,
 	"HealthRegenerationAmount": 0.5,
 	"HealthKitRestoreAmount": 50.0,
@@ -52,8 +57,9 @@ DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code.
 	"WaterStart": 40.0,
 	"FoodDrainMultiplier": 1.0,
 	"WaterDrainMultiplier": 1.0,
-	"EnergyDrainMultiplier": 1.0,
 	"OxygenDrainMultiplier": 1.0,
+	"PrawnSeamothPowerDrainMultiplier": 1.0,
+	"HandToolsPowerDrainMultiplier": 1.0,
 	"StarvationDamageMultiplier": 25.0,
 	"DehydrationDamageMultiplier": 25.0
 }
