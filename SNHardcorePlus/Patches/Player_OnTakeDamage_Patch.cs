@@ -7,7 +7,7 @@ namespace SNHardcorePlus.Patches
 {
     [HarmonyPatch(typeof(Player))]
     [HarmonyPatch("OnTakeDamage")]
-    public class Player_OnTakeDamage_Patch
+    class Player_OnTakeDamage_Patch
     {
         public static IEnumerable<CodeInstruction> Transpiler(MethodBase original, IEnumerable<CodeInstruction> instructions)
         {

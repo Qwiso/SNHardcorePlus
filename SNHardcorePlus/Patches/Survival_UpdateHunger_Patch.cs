@@ -7,7 +7,7 @@ namespace SNHardcorePlus.Patches
 {
     [HarmonyPatch(typeof(Survival))]
     [HarmonyPatch("UpdateHunger")]
-    public class Survival_UpdateHunger_Patch
+    class Survival_UpdateHunger_Patch
     {
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
