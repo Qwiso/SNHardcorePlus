@@ -11,6 +11,11 @@ Name | Value | Description
 DayNightCycleMultiplier | 1.0 | the rate of time passing
 CraftingCostMultiplier | 1 | a value of 5 would make every blueprint require 5 times more of each ingredient
 PowerUsedPerCraft | 5.0 | how much power does each item use when crafting
+CyclopsShieldPowerCost | 50.0 | the default consumption of shields. needs more testing
+CyclopsSonarPowerCost | 10.0 | power cost of the cyclops sonar
+CyclopsSilentPowerCost | 5.0 | power cost of the cyclops silent mode
+PlantGrowRateMultiplier | 1.0 | adjust the rate which plants mature
+MaproomPowerDrainMultiplier | 0.5 | *should be called MaproomPowerCost* 
 HealthRegenerationThreshold | 0.75 | the percentage of FoodMax+WaterMax you must be above before you regen
 HealthRegenerationAmount | 0.5 | how much hp you regen every 10 seconds while above the regen threshold
 HealtKitRestoreAmount | 50.0 | 50hp returned per medical kit
@@ -23,8 +28,9 @@ FoodStart | 60.0 | the value of food you respawn with
 WaterStart | 40.0 | the value of water you respawn with
 FoodDrainMultiplier | 1.0 | the rate of drain on the player's food supply
 WaterDrainMultiplier | 1.0 | the rate of drain on the player's water supply
-EnergyDrainMultiplier | 1.0 | the rate of energy consumed by most electrical systems
 OxygenDrainMultiplier | 1.0 | the rate of oxygen consumption of the player
+PrawnSeamothPowerDrainMultiplier | 1.0 | power usage for prawn and seamoth
+HandToolsPowerDrainMultiplier | 1.0 | power usage for handheld tools
 StarvationDamageMultiplier | 25.0 | 25 is the default value in the game's code. adjust accordingly
 DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code. adjust accordingly
 
