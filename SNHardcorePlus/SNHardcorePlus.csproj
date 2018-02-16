@@ -54,9 +54,11 @@
   <ItemGroup>
     <Compile Include="HCPSettings.cs" />
     <Compile Include="Patches\CrafterLogic_ConsumeEnergy_Patch.cs" />
+    <Compile Include="Patches\CyclopsMotorMode_GetPowerConsumption_Patch.cs" />
     <Compile Include="Patches\EnergyMixin_ConsumeEnergy_Patch.cs" />
     <Compile Include="Patches\GrowingPlant_GetGrowthDuration_Patch.cs" />
     <Compile Include="Patches\MapRoomFunctionality_UpdateScanning_Patch.cs" />
+    <Compile Include="Patches\SubRoot_Start_Patch.cs" />
     <Compile Include="QPatcher.cs" />
     <Compile Include="Patches\CrafterLogic_IsCraftRecipeFulfilled_Patch.cs" />
     <Compile Include="Patches\DamageSystem_CalculateDamage_Patch.cs" />

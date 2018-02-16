@@ -9,6 +9,11 @@ namespace SNHardcorePlus
         public int CraftingCostMultiplier = 1;                   // straight up multiplier for crafting costs
         public float PowerUsedPerCraft = 5f;
 
+        public float CyclopsMotorPowerDrainMultiplier = 1f;
+        public float CyclopsShieldPowerCost = 50f;
+        public float CyclopsSonarPowerCost = 10f;
+        public float CyclopsSilentPowerCost = 5f;
+
         public float PlantGrowRateMultiplier = 1f;
         public float MaproomPowerDrainMultiplier = 0.5f;
 
@@ -31,7 +36,6 @@ namespace SNHardcorePlus
         public float OxygenDrainMultiplier = 1f;
 
         public float PrawnSeamothPowerDrainMultiplier = 1f;
-        public float CyclopsPowerDrainMultiplier = 1f;
         public float HandToolsPowerDrainMultiplier = 1f;
 
         public float StarvationDamageMultiplier = 25f;           // 25f is the value used by default in the game. scale up or down as you choose
