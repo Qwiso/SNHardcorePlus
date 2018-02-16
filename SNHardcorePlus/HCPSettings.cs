@@ -9,9 +9,8 @@ namespace SNHardcorePlus
         public int CraftingCostMultiplier = 1;                   // straight up multiplier for crafting costs
         public float PowerUsedPerCraft = 5f;
 
-        public float LavaLarvaPowerDrain = 0.05f;
-
         public float PlantGrowRateMultiplier = 1f;
+        public float MaproomPowerDrainMultiplier = 0.5f;
 
         public float HealthRegenerationThreshold = 0.75f;        // if current food + water is greater than X percent of foodmax + watermax
         public float HealthRegenerationAmount = 0.5f;            // flat amount of health returned per tick of regeneration
