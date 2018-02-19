@@ -10,6 +10,9 @@ namespace SNHardcorePlus.Patches
     {
         public static bool Prefix(Survival __instance, ref float __result, ref float timePassed)
         {
+            if (HCPHelper.NextWarning == 0f)
+                HCPHelper.NextWarning = Time.time + 10;
+
             float num = 0f;
 
             if (timePassed > 1.401298E-45f)
@@ -31,9 +34,13 @@ namespace SNHardcorePlus.Patches
                 }
                 __instance.water = Mathf.Clamp(__instance.water - num3, 0f, HCPSettings.Instance.WaterMax);
 
-                MethodInfo warningSoundsMethod = __instance.GetType().GetMethod("UpdateWarningSounds", BindingFlags.NonPublic | BindingFlags.Instance);
-                warningSoundsMethod.Invoke(__instance, new object[] { __instance.foodWarningSounds, __instance.food, prevVal, HCPSettings.Instance.FoodMax * 0.2f, HCPSettings.Instance.FoodMax * 0.1f });
-                warningSoundsMethod.Invoke(__instance, new object[] { __instance.waterWarningSounds, __instance.water, prevVal, HCPSettings.Instance.WaterMax * 0.2f, HCPSettings.Instance.WaterMax * 0.1f });
+                if (Time.time > HCPHelper.NextWarning)
+                {
+                    MethodInfo warningSoundsMethod = __instance.GetType().GetMethod("UpdateWarningSounds", BindingFlags.NonPublic | BindingFlags.Instance);
+                    warningSoundsMethod.Invoke(__instance, new object[] { __instance.foodWarningSounds, __instance.food, prevVal, HCPSettings.Instance.FoodMax * 0.2f, HCPSettings.Instance.FoodMax * 0.1f });
+                    warningSoundsMethod.Invoke(__instance, new object[] { __instance.waterWarningSounds, __instance.water, prevVal, HCPSettings.Instance.WaterMax * 0.2f, HCPSettings.Instance.WaterMax * 0.1f });
+                    HCPHelper.NextWarning = Time.time + 10;
+                }
             }
 
             __result = num;
