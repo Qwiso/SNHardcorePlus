@@ -20,7 +20,7 @@ namespace SNHardcorePlus
         public float HealthRegenerationAmount = 0.5f;
 
         public float HealthKitRestoreAmount = 50f;
-        public float BladderFishOxygenValue = 30f;
+        public float BladderFishOxygenValue = 15f;
 
         public float RawDamageMultiplier = 1f;
 
