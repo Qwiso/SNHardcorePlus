@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace SNHardcorePlus.Patches
+﻿namespace SNHardcorePlus
 {
     public class HCPHelper
     {
