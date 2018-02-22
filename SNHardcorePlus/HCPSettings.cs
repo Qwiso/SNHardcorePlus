@@ -25,6 +25,7 @@ namespace SNHardcorePlus
         public float HealthMax = 100f;
         public float FoodMax = 100f;
         public float WaterMax = 100f;
+        public float FoodOverchargeMax = 150f;
 
         public float HealthRespawnRatio = 0.6f;
         public float FoodStart = 60f;

@@ -30,7 +30,7 @@ namespace SNHardcorePlus.Patches
                 {
                     foodInjected = true;
 
-                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.FoodMax);
+                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.FoodOverchargeMax);
                     newInstruction.labels = instruction.labels;
                     yield return newInstruction;
                     continue;

@@ -25,7 +25,7 @@ namespace SNHardcorePlus.Patches
                 {
                     num += (num2 - __instance.food) * HCPSettings.Instance.StarvationDamageMultiplier;
                 }
-                __instance.food = Mathf.Clamp(__instance.food - num2, 0f, HCPSettings.Instance.FoodMax);
+                __instance.food = Mathf.Clamp(__instance.food - num2, 0f, HCPSettings.Instance.FoodOverchargeMax);
 
                 float num3 = (timePassed / 1800f * 100f) * HCPSettings.Instance.WaterDrainMultiplier;
                 if (num3 > __instance.water)
