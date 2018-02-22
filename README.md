@@ -21,8 +21,9 @@ HealthRegenerationAmount | 0.5 | how much hp you regen every 10 seconds while ab
 HealtKitRestoreAmount | 50.0 | 50hp returned per medical kit
 RawDamageMultiplier | 1.0 | 2.0 would cause all damage to double when applied to the player
 HealthMax | 100.0 | maximum health available to player
-FoodMax | 100.0 | maximum food value available to player
 WaterMax | 100.0 | maximum water value available to the player
+FoodMax | 100.0 | maximum food value available to player
+FoodOverchargeMax | 150.0 | maximum value to which food can be overcharged
 HealthRespawnRatio | 0.6 | sets health at 60% of HealthMax when you respawn
 FoodStart | 60.0 | the value of food you respawn with
 WaterStart | 40.0 | the value of water you respawn with
@@ -52,6 +53,7 @@ DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code.
 	"HealthMax": 100.0,
 	"FoodMax": 100.0,
 	"WaterMax": 100.0,
+	"FoodOverchargeMax": 150.0,
 	"HealthRespawnRatio": 0.6,
 	"FoodStart": 60.0,
 	"WaterStart": 40.0,
