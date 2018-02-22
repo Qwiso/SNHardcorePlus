@@ -13,6 +13,7 @@ namespace SNHardcorePlus.Patches
             bool hungryValueInjected = false;
             bool foodInjected = false;
             bool waterInjected = false;
+            bool oxygenInjected = false;
 
             foreach (var instruction in instructions)
             {
@@ -41,6 +42,16 @@ namespace SNHardcorePlus.Patches
                     waterInjected = true;
 
                     var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.WaterMax);
+                    newInstruction.labels = instruction.labels;
+                    yield return newInstruction;
+                    continue;
+                }
+
+                if (instruction.opcode.Equals(OpCodes.Ldc_R4) && instruction.operand.Equals(15f) && !oxygenInjected)
+                {
+                    oxygenInjected = true;
+
+                    var newInstruction = new CodeInstruction(OpCodes.Ldc_R4, HCPSettings.Instance.BladderFishOxygenValue);
                     newInstruction.labels = instruction.labels;
                     yield return newInstruction;
                     continue;
