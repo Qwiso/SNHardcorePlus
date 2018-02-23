@@ -1,6 +1,5 @@
 ﻿using Harmony;
 using System;
-using System.Collections.Generic;
 using System.Reflection;
 
 namespace SNHardcorePlus.Patches
@@ -17,7 +16,9 @@ namespace SNHardcorePlus.Patches
 
             for (int i = 0; i < patchedTech.ingredientCount; i++)
             {
-                patchedTech._ingredients[i] = new HCPIngredient(patchedTech._ingredients[i].techType, patchedTech._ingredients[i].amount * HCPSettings.Instance.CraftingCostMultiplier);
+                var ingredientTechType = patchedTech._ingredients[i].techType;
+                var patchedIngredientAmount = patchedTech._ingredients[i].amount * HCPSettings.Instance.CraftingCostMultiplier;
+                patchedTech._ingredients[i] = new HCPIngredient(ingredientTechType, patchedIngredientAmount);
             }
 
             __result = patchedTech;

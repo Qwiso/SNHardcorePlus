@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace SNHardcorePlus
 {
+    // copied from https://github.com/dumbdiscord/SubnauticaModLoader/blob/master/ModPatcher/TechDataWrapper.cs
     class HCPTechData : ITechData
     {
         public int _craftAmount;
