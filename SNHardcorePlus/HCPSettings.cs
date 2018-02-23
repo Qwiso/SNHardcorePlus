@@ -6,7 +6,6 @@ namespace SNHardcorePlus
     public class HCPSettings
     {
         public float DayNightCycleMultiplier = 1f;
-        public int CraftingCostMultiplier = 1;
         public float PowerUsedPerCraft = 5f;
 
         public float CyclopsShieldPowerCost = 50f;

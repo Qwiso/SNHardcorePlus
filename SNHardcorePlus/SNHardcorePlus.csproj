@@ -60,11 +60,9 @@
     <Compile Include="Patches\MapRoomFunctionality_UpdateScanning_Patch.cs" />
     <Compile Include="Patches\SubRoot_Start_Patch.cs" />
     <Compile Include="QPatcher.cs" />
-    <Compile Include="Patches\CrafterLogic_IsCraftRecipeFulfilled_Patch.cs" />
     <Compile Include="Patches\DamageSystem_CalculateDamage_Patch.cs" />
     <Compile Include="Patches\DayNightCycle_Update_Patch.cs" />
     <Compile Include="Patches\EnergyInterface_ConsumeEnergy_Patch.cs" />
-    <Compile Include="Patches\Inventory_ConsumeResourcesForRecipe_Patch.cs" />
     <Compile Include="Patches\Oxygen_RemoveOxygen_Patch.cs" />
     <Compile Include="Patches\Player_OnTakeDamage_Patch.cs" />
     <Compile Include="Patches\Survival_Eat_Patch.cs" />
@@ -73,7 +71,6 @@
     <Compile Include="Patches\Survival_UpdateHunger_Patch.cs" />
     <Compile Include="Patches\Survival_UpdateStats_Patch.cs" />
     <Compile Include="Patches\Survival_Use_Patch.cs" />
-    <Compile Include="Patches\TooltipFactory_WriteIngredients_Patch.cs" />
     <Compile Include="Patches\uGUI_FoodBar_Patch.cs" />
     <Compile Include="Patches\uGUI_WaterBar_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
