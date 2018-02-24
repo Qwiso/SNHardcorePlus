@@ -6,6 +6,8 @@ https://www.nexusmods.com/subnautica/mods/17
 ### config.json
 Should be located in `QMods\SNHardcorePlus` folder. This is where you customize your experience by editing the values of each key
 
+###### Be aware that DayNightCycle affects many parts of the game: plant growth, crafting time, and other unforseen things
+
 Name | Value | Description
 :--- | :-----: | :---
 DayNightCycleMultiplier | 1.0 | the rate of time passing
