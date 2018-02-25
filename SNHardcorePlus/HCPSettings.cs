@@ -9,6 +9,7 @@ namespace SNHardcorePlus
         public int CraftingCostMultiplier = 1;
         public float PowerUsedPerCraft = 5f;
 
+        public float CyclopsMotorDrainMultiplier = 1f;
         public float CyclopsShieldPowerCost = 50f;
         public float CyclopsSonarPowerCost = 10f;
         public float CyclopsSilentPowerCost = 5f;
