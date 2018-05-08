@@ -62,7 +62,7 @@
     <Compile Include="Patches\GrowingPlant_GetGrowthDuration_Patch.cs" />
     <Compile Include="HCPHelper.cs" />
     <Compile Include="Patches\MapRoomFunctionality_UpdateScanning_Patch.cs" />
-    <Compile Include="Patches\PDAScanner_Initialize_Patch.cs" />
+    <Compile Include="Patches\PDAScanner_GetEntryData_Patch.cs" />
     <Compile Include="Patches\SubControl_Update_Patch.cs" />
     <Compile Include="Patches\SubRoot_Start_Patch.cs" />
     <Compile Include="QPatcher.cs" />
