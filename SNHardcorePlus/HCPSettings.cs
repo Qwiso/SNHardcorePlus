@@ -45,7 +45,7 @@ namespace SNHardcorePlus
         public float StarvationDamageMultiplier = 25f;
         public float DehydrationDamageMultiplier = 25f;
 
-        public HCPScannerSettings ScannerData;
+        internal HCPScannerSettings ScannerData;
         public Dictionary<string, int> Blueprints = new Dictionary<string, int>();
 
         private static readonly HCPSettings instance = new HCPSettings();

@@ -42,6 +42,8 @@ namespace SNHardcorePlus
                 var userValue = field.GetValue(userSettings);
                 field.SetValue(HCPSettings.Instance, userValue);
             }
+
+            HCPSettings.Instance.Initialize();
         }
 
         private static void writeDefaultSettingsFile(string path)
