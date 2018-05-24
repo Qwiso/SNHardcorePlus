@@ -74,9 +74,9 @@ DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code.
 		"CyclopsBridge": 3,
 		"CyclopsEngine": 3,
 		"CyclopsHull": 3,
-		"Floodlight": 1,
 		"GravTrap": 2,
 		"LaserCutter": 3,
+		"MobileVehicleBay": 3,
 		"ModificationBay": 3,
 		"Moonpool": 2,
 		"NuclearReactor": 3,
@@ -88,14 +88,11 @@ DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code.
 		"PrawnPropulsionCannon": 2,
 		"PrawnTorpedoArm": 2,
 		"PropulsionCannon": 2,
-		"ReinforcedDiveSuit": 2,
 		"ScannerRoom": 3,
 		"Seamoth": 3,
 		"Seaglide": 2,
-		"StatisRifle": 2,
-		"Stillsuit": 2,
-		"ThermalPlant": 2,
-		"WaterFiltration": 2
+		"StasisRifle": 2,
+		"ThermalPlant": 2
 	}
 }
 ```
