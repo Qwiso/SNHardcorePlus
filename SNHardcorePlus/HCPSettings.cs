@@ -1,4 +1,5 @@
 ﻿using Oculus.Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace SNHardcorePlus
 {
@@ -44,6 +45,8 @@ namespace SNHardcorePlus
         public float StarvationDamageMultiplier = 25f;
         public float DehydrationDamageMultiplier = 25f;
 
+        internal HCPScannerSettings ScannerData;
+        public Dictionary<string, int> Blueprints = new Dictionary<string, int>();
 
         private static readonly HCPSettings instance = new HCPSettings();
 
@@ -61,6 +64,11 @@ namespace SNHardcorePlus
             {
                 return instance;
             }
+        }
+
+        public void Initialize()
+        {
+            ScannerData = new HCPScannerSettings(Blueprints);
         }
     }
 }
