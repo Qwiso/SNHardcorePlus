@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="HCPIngredient.cs" />
     <Compile Include="HCPIngredients.cs" />
+    <Compile Include="HCPScannerData.cs" />
     <Compile Include="HCPSettings.cs" />
     <Compile Include="HCPTechData.cs" />
     <Compile Include="Patches\CraftData_Get_Patch.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Patches\uGUI_FoodBar_Patch.cs" />
     <Compile Include="Patches\uGUI_WaterBar_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubnauticaTechTypeExtensions.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
