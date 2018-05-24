@@ -74,9 +74,9 @@ DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code.
 		"CyclopsBridge": 3,
 		"CyclopsEngine": 3,
 		"CyclopsHull": 3,
-		"Floodlight": 1,
 		"GravTrap": 2,
 		"LaserCutter": 3,
+		"MobileVehicleBay": 3,
 		"ModificationBay": 3,
 		"Moonpool": 2,
 		"NuclearReactor": 3,
@@ -88,14 +88,45 @@ DehydrationDamageMultiplier | 25.0 | 25 is the default value in the game's code.
 		"PrawnPropulsionCannon": 2,
 		"PrawnTorpedoArm": 2,
 		"PropulsionCannon": 2,
-		"ReinforcedDiveSuit": 2,
 		"ScannerRoom": 3,
 		"Seamoth": 3,
 		"Seaglide": 2,
-		"StatisRifle": 2,
-		"Stillsuit": 2,
-		"ThermalPlant": 2,
-		"WaterFiltration": 2
+		"StasisRifle": 2,
+		"ThermalPlant": 2
+	}
+}
+```
+
+If you want a much longer first half of the game, this Blueprints fragment configuration will require a very thorough playthorough:
+
+```
+{
+	"Blueprints": {
+		"BatteryCharger": 5,
+		"Beacon": 5,
+		"Bioreactor": 10,
+		"CyclopsBridge": 5,
+		"CyclopsEngine": 3,
+		"CyclopsHull": 7,
+		"GravTrap": 5,
+		"LaserCutter": 5,
+		"MobileVehicleBay": 12,
+		"ModificationBay": 5,
+		"Moonpool": 10,
+		"NuclearReactor": 5,
+		"PowerCellCharger": 5,
+		"PowerTransmitter": 3,
+		"Prawn": 5,
+		"PrawnDrillArm": 2,
+		"PrawnGrapplingArm": 2,
+		"PrawnPropulsionCannon": 3,
+		"PrawnTorpedoArm": 2,
+		"PropulsionCannon": 4,
+		"ScannerRoom": 15,
+		"Seamoth": 10,
+		"Seaglide": 6,
+		"StasisRifle": 3,
+		"ThermalPlant": 3
 	}
 }
 ```
